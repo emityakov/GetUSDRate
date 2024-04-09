@@ -32,6 +32,7 @@ class MainViewModel : ViewModel() {
 
     companion object {
         const val TAG = "MainViewModel"
-        const val USD_RATE_URL = "https://www.freeforexapi.com/api/live?pairs=USDRUB"
+        const val API_KEY = "USE_YOUR_PERSONAL_API_KEY"
+        const val USD_RATE_URL = "https://exchange-rates.abstractapi.com/v1/live/?api_key=$API_KEY&base=USD&target=RUB"
     }
 }

@@ -22,9 +22,8 @@ class RateCheckInteractor {
     private fun parseRate(jsonString: String): String {
         try {
             return JSONObject(jsonString)
-                .getJSONObject("rates")
-                .getJSONObject("USDRUB")
-                .getString("rate")
+                .getJSONObject("exchange_rates")
+                .getString("RUB")
         } catch (e: Exception) {
             Log.e("RateCheckInteractor", "", e)
         }
